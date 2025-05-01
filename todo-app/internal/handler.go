@@ -16,7 +16,7 @@ func handleIndex(w http.ResponseWriter, r *http.Request) {
 	tmpl.Execute(w, tasks)
 }
 
-// Добавление задачи
+// Добавление задачи!
 func handleAddTask(w http.ResponseWriter, r *http.Request) {
 	if err := r.ParseForm(); err != nil {
 		http.Error(w, "Неверные данные", http.StatusBadRequest)
